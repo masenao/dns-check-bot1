@@ -1,0 +1,15 @@
+import os
+import sys
+
+# Путь к твоему проекту (замени на свой юзернейм)
+path = '/home/uglymonk/dns-check-bot'
+if path not in sys.path:
+    sys.path.append(path)
+
+os.environ['TOKEN'] = '8816714845:AAFNlV6-KHGjydExeGN8V9MpqZsuGP-p-_c'
+
+# Импортируем бота
+from bot import main
+
+if __name__ == "__main__":
+    main()
